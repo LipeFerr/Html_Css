@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela HTML</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption{
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+
+        tfoot td, table th {
+            background-color: #ddd;
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+        Padaria da mãe joana. 
+    </p>
+
+    <table>
+        <caption>Venda #456</caption>
+        <thead>
+            <tr>
+                <th>Produtos</th>
+                <th>Qtd</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pao de Queijo</td>
+                <td>80un.</td>
+                <td>R$222,22</td>
+            </tr>
+            <tr>
+                <!--  -->
+                <td colspan="2">Adicional de Doce de Leite</td>
+                <td>R$222,22</td>
+            </tr>
+            <tr>
+                <td>Coxinha de frango c/ catupiry</td>
+                <td>10cx.</td>
+                <td>R$222,22</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td  colspan="2" rowspan="2"></td>
+                <td>Total:</td>
+            </tr>
+            <tr>
+
+                <td>R$666,66</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas e Menus</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <ul>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+    </ul>
+    <ol type="1" start="1">
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+    </ol>
+
+    <dl>
+        <dt>Café</dt>
+        <dd>bebida preta quente</dd>
+        <dt>Coca</dt>
+        <dd>bebida preta gelada</dd>
+    </dl>
+</body>
+
+</html>

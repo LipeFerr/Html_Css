@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela HTML</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+
+        tfoot td,
+        table th {
+            background-color: #ddd;
+        }
+        
+    label{
+        cursor: pointer;
+        display: block;   
+        font-family: sans-serif;
+        font-style: italic;
+    }
+
+    #lbDev, #lbGenero{
+        display: inline;
+    }
+
+    #range {
+        width: 50%;
+    }
+
+    </style>
+
+
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome completo.." value=""
+            required/>
+        </p>
+
+        <p>
+            <label id="lbDev" for="dev">BackEnd</label>
+            <input id="dev" type="checkbox" name="dev"/><br>
+            <label id="lbDev" for="dev1">FrontEnd</label>
+            <input id="dev1" type="checkbox" name="dev1"/><br>
+            <label id="lbDev" for="dev2">SqlDeveloper</label>
+            <input id="dev2" type="checkbox" name="dev2"/><br>
+        </p>
+
+        <p> 
+            Gênero:<br>
+            <label id="lbGenero" for="feminino">Feminino</label>
+            <input id="feminino" type="radio" name="genero" value="f"/><br>
+            <label id="lbGenero" for="masculino">Masculino</label>
+            <input id="masculino" type="radio" name="genero" value="m"/><br>
+            <label id="lbGenero" for="outro">Outro</label>
+            <input id="outro" type="radio" name="genero" value="o"/><br>
+        </p>
+
+        <p> 
+            <label id="lbData" for="data">Date:</label>
+            <input id="data" type="date" name="data" value="2023-06-27"/><br> 
+        </p>
+
+        <p> 
+            <label id="lbData" for="datetime">Date:</label>
+            <input id="datetime" type="datetime-local" name="datetime" value="2023-06-27T15:57"/><br>
+        </p>
+
+        <p> 
+            <label id="lbTime" for="time">Date:</label>
+            <input id="time" type="time" name="time" value="15:57:55"/><br>
+        </p>
+
+        <p> 
+            <label id="lbCor" for="cor">Cor Preferida</label>
+            <input id="cor" type="color" name="cor" value="#B1B1B1"/><br>
+        </p>
+
+        <p> 
+            <label id="lbEmail" for="email">Email:</label>
+            <input id="email" type="email" name="email" value="@gmail.com"/><br>
+        </p>
+
+        <p> 
+            <label id="lbFoto" for="foto">Sua foto:</label>
+            <input id="foto" type="file" accept=".png" name="foto"/><br>
+        </p>
+
+        <p> 
+            <label id="number" for="number">Número:</label>
+            <input id="number" type="number" name="number" placeholder="0 - 100" min="0" max="100"/><br>
+        </p>
+
+        <p> 
+            <label id="senha" for="senha">Senha:</label>
+            <input id="senha" type="password" name="senha" /><br>
+        </p>
+
+        <p> 
+            <label id="range" for="range">Felicidade:</label>
+            <input id="range" type="range" name="range"  min="0" max="10" step="1" list="felicidade"/><br>
+            <datalist id="felicidade">
+                <option value="0" label="bad"></option>
+                <option value="5" label="normal" ></option>
+                <option value="10" label="good"></option>
+            </datalist>
+        </p>
+
+        <p> 
+            <label id="url" for="number">Sua URL:</label>
+            <input id="url" type="url" name="url" /><br>
+        </p>
+
+        <p> 
+            <label id="search" for="search">Search:</label>
+            <input id="search" type="search" name="search" /><br>
+        </p>
+
+        <p> 
+            <label id="select" for="search">Selecione alguma opção:</label>
+            <select name="select" id="select">
+                <option value="1">Valor 1</option>
+                <option value="2">Valor 2</option>
+                <option value="3">Valor 3</option>
+                <option value="4">Valor 4</option>
+            </select>
+        </p>
+
+        <p> 
+            <label id="text-area" for="text-area">textarea:</label>
+           <textarea id="text-area" name="text-area" rows="2" cols="50"></textarea>
+        </p>
+            <button type="reset">Reset</button>    
+            <button type="submit">Enviar</button> 
+        </p>
+    </form>
+</body>
+
+</html>
