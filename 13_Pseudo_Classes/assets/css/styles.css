@@ -1,0 +1,90 @@
+body{
+    background-color: rgba(18, 236, 73, 0.3);
+}
+
+.acao_mouse {
+    transition: all 1s ease-in-out;
+    width: 310px;
+}
+
+.acao_mouse:hover {
+    background: rgb(0, 0, 0, 0.3);
+    width: 310px;
+}
+
+.input{
+    margin-bottom: 10px;
+    
+}
+
+.input-cb {
+    display: flex; 
+    width: 20px; 
+    height: 20px;"
+}
+
+a:active {
+ background-color: brown;   
+}
+
+a {
+    color:darkorange;
+}
+
+a:link {
+    color:deeppink;
+}
+
+a:visited{
+    color: firebrick;
+}
+
+input:focus{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: rgba(255, 0, 0, 0.6);
+    cursor: not-allowed;
+    outline: 0.1px solid blue;
+}
+
+input:checked {
+    width: 25px;
+    height: 25px; 
+    border: 5px solid green;
+}
+
+input:checked + h1 {
+    background-color: darkolivegreen;
+    width: fit-content;
+}
+
+.pai .lista li:last-child {
+    background: red;
+    width: fit-content;
+}
+
+.p-lorem{
+    background-color: rgba(0,0,0,0.2);
+    width: 350px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+p:not(.meio) {
+    color: blue;
+}
+
+ul.nth li:nth-child(odd) {
+    background-color: red;
+    width: fit-content;
+}
+
+ul.nth li:nth-child(even) {
+    background-color: black;
+    color: red;
+    width: fit-content;
+}
