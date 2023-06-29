@@ -1,0 +1,55 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pai {
+    width: 50rem;
+    height: 100vh;
+    background-color: yellow;
+}
+
+.pai > div {
+    width:50%;
+    height: 50rem;
+    background-color: blue;
+}
+
+.pai1 {
+    width: 98vw;
+    height: 100vh;
+    background-color: yellow;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.color-one{
+    background-color: turquoise;
+}
+
+.color-two{
+    background-color: darkblue;
+}
+
+.nav {
+    font-size: 2rem; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    background-color: rgba(0,0,0,0.6); 
+    display: block;
+    padding: 1rem;
+    width: 98vw;
+    position: fixed;
+}
+
+.a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
